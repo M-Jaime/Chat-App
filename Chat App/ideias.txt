@@ -1,0 +1,15 @@
+// JS 
+/*
+    loginForm.style.display = `none`
+    Login.style.background = `transparent`
+    loginTitle.innerHTML = `Logando...`
+    
+    setTimeout(() => {
+        Login.style.display = `none`
+    }, 3000);
+    */
+
+    // Enviando mensagem ao servidor
+    websocket.onopen = ()=>{
+        websocket.send(`User ${user.name} is conected `)
+    }
